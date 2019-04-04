@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>FrontPage.Demo1</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2019-04-04T10:07:25+02:00</date>
+    <runTimeInMillis>119</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.psecchi.demofitnesse.fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test de creation de client&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;On test les RG autours de la creation d'un nouveau client : &lt;br/&gt; - le client doit etre majeur&lt;br/&gt; - le prenom est obligatoire&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Creation d un nouveau client&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;nom&lt;/td&gt;
+		&lt;td&gt;prenom&lt;/td&gt;
+		&lt;td&gt;age&lt;/td&gt;
+		&lt;td&gt;creation?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;Zidane&lt;/td&gt;
+		&lt;td&gt;Zinedine&lt;/td&gt;
+		&lt;td&gt;40&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;OK&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;Kilian&lt;/td&gt;
+		&lt;td class="error"&gt;MBappe&lt;/td&gt;
+		&lt;td class="error"&gt;17&lt;/td&gt;
+		&lt;td class="error"&gt;KO&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.IllegalArgumentException: le client doit etre majeur
+	at com.psecchi.demofitnesse.service.ClientService.saveClient(ClientService.java:15) [file:/C:/PROXIAD/workspace/perso/demo-fitnesse/target/classes/]
+	at com.psecchi.demofitnesse.fixture.CreationDUnNouveauClient.creation(CreationDUnNouveauClient.java:31) [file:/C:/PROXIAD/workspace/perso/demo-fitnesse/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72) [fitnesse-20151230.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;Ronaldo&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;30&lt;/td&gt;
+		&lt;td class="error"&gt;KO&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.IllegalArgumentException: prenom obligatoire
+	at com.psecchi.demofitnesse.service.ClientService.saveClient(ClientService.java:12) [file:/C:/PROXIAD/workspace/perso/demo-fitnesse/target/classes/]
+	at com.psecchi.demofitnesse.fixture.CreationDUnNouveauClient.creation(CreationDUnNouveauClient.java:31) [file:/C:/PROXIAD/workspace/perso/demo-fitnesse/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_91]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72) [fitnesse-20151230.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>Demo1</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.psecchi.demofitnesse.fixture'}</instruction>
+        <slimResult>pass(com.psecchi.demofitnesse.fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.psecchi.demofitnesse.fixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='CreationDUnNouveauClient', args=[]}</instruction>
+        <slimResult>pass(Creation d un nouveau client)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Creation d un nouveau client</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setNom', args=[Zidane]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setPrenom', args=[Zinedine]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_6', instruction='call', instanceName='decisionTable_1', methodName='setAge', args=[40]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_6</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='creation', args=[]}</instruction>
+        <slimResult>pass(OK)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>OK</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setNom', args=[Kilian]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_11', instruction='call', instanceName='decisionTable_1', methodName='setPrenom', args=[MBappe]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_11</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='setAge', args=[17]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_12</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_14', instruction='call', instanceName='decisionTable_1', methodName='creation', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_14</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_16', instruction='call', instanceName='decisionTable_1', methodName='setNom', args=[Ronaldo]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_16</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_17', instruction='call', instanceName='decisionTable_1', methodName='setPrenom', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_17</instructionId>
+                    <col>1</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_18', instruction='call', instanceName='decisionTable_1', methodName='setAge', args=[30]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_18</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_20', instruction='call', instanceName='decisionTable_1', methodName='creation', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_20</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -Xmx1024m -Xms512m -cp target/classes;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\antlr-2.7.7.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\aopalliance-1.0.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\aspectjrt-1.8.4.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\classmate-1.3.0.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\commons-collections-3.2.1.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\commons-lang-2.6.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\commons-logging-1.2.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\diffutils-1.3.0.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\dom4j-1.6.1.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\fitnesse-20151230.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\formation-jpa-0.0.1-SNAPSHOT.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\geronimo-jta_1.1_spec-1.1.1.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\hibernate-commons-annotations-5.0.1.Final.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\hibernate-core-5.1.0.Final.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\hibernate-entitymanager-5.1.0.Final.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\hsqldb-2.0.0.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\htmllexer-2.1.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\htmlparser-2.1.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\jandex-2.0.0.Final.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\javassist-3.20.0-GA.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\jboss-logging-3.3.0.Final.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\jcl-over-slf4j-1.7.10.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\json-20140107.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\log4j-1.2.17.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\postgresql-9.4.1208.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\slf4j-api-1.7.10.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\slf4j-log4j12-1.7.21.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-aop-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-beans-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-context-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-context-support-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-core-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-data-commons-1.9.2.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-data-jpa-1.7.2.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-expression-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-jdbc-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-orm-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\spring-tx-4.2.5.RELEASE.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\velocity-1.7.jar;C:\PROXIAD\workspace\perso\demo-fitnesse\target\fitnesse-libs\xml-apis-1.0.b2.jar fitnesse.slim.SlimService 8091</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>752</totalRunTimeInMillis>
+</testResults>
+

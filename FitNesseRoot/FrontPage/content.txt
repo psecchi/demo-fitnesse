@@ -1,0 +1,12 @@
+!*> Technical prerequisites
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Xmx1024m -Xms512m -cp %p %m }
+!path target/classes
+!path target/fitnesse-libs/*.jar
+*!
+
+
+!2 Bienvenue a l'atelier sur les tests d'acceptation
+
+
+!contents -R2 -g -p -f -h

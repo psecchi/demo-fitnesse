@@ -1,0 +1,15 @@
+!| import                   |
+|com.psecchi.demofitnesse.fixture|
+
+Test de creation de client
+
+
+On test les RG autours de la creation d'un nouveau client : 
+ - le client doit etre majeur
+ - le prenom est obligatoire
+
+|Creation d un nouveau client|
+|nom|prenom|age|creation?|
+|Zidane         |Zinedine          |40        |OK|
+|Kilian         |MBappe          |17        |KO|
+|Ronaldo         |          |30        |KO|
